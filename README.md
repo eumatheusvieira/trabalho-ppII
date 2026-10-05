@@ -74,18 +74,18 @@ O programa foi desenvolvido apenas com variáveis simples e as estruturas `if`, 
 É necessário ter um compilador C instalado, como o GCC.
 
 ```bash
-gcc campeonato.c -o campeonato
-./campeonato
+gcc main.c -o main
+./main
 ```
 
 No Windows:
 
 ```bash
-gcc campeonato.c -o campeonato.exe
-campeonato.exe
+gcc main.c -o main.exe
+main.exe
 ```
 
-Substitua `campeonato.c` pelo nome do arquivo-fonte do repositório, caso seja diferente.
+Substitua `main.c` pelo nome do arquivo-fonte do repositório, caso seja diferente.
 
 ## Exemplo de saída
 
