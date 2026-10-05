@@ -99,8 +99,8 @@ Situação: Boa campanha
 
 ## Autores
 
-- Nome do integrante 1
-- Nome do integrante 2
-- Nome do integrante 3
+- Matheus Vieira Rocha
+- Letícia ...
+- Kauã ...
 
 Professor: Sidney de Castro Lima
