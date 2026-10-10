@@ -27,10 +27,10 @@ int main(){
 			printf("<===== SIMULADOR DE PONTUAÇÃO =====>\n Digite quantas simulações você deseja fazer (Somente entre 1 a 5): \n");
 			scanf("%d", &qtdSimulacao);
 
-				while (qtdSimulacao < 1 || qtdSimulacao > 5){
-					printf("Digite um valor válido (Somente entre 1 a 5): \n");
-					scanf("%d", &qtdSimulacao);
-				}
+			while (qtdSimulacao < 1 || qtdSimulacao > 5){
+				printf("Digite um valor válido (Somente entre 1 a 5): \n");
+				scanf("%d", &qtdSimulacao);
+			}
 
 			for(s = 1; s <= qtdSimulacao; s++){
 				printf("Simulação %d\n", s);
@@ -56,30 +56,28 @@ int main(){
 					} else {
 						entradaValida = 1;
 					}
-	
-			}
+				}
 
-			simTotalVitoria = simVitoria * vitoria;
-			simTotalEmpate = simEmpate * empate;
-			simTotalDerrota = simDerrota * derrota;
-			simTotal = simTotalVitoria + simTotalEmpate + simTotalDerrota;
+				simTotalVitoria = simVitoria * vitoria;
+				simTotalEmpate = simEmpate * empate;
+				simTotalDerrota = simDerrota * derrota;
+				simTotal = simTotalVitoria + simTotalEmpate + simTotalDerrota;
 
-			if (simTotal >= 15){
-				printf("A equipe possui: %d pontos. \n Excelente Campanha! \n", simTotal);
+				if (simTotal >= 15){
+					printf("A equipe possui: %d pontos. \n Excelente Campanha! \n", simTotal);
+				}
+				else if (simTotal >= 10){
+					printf("A equipe possui: %d pontos. \n Boa Campanha! \n", simTotal);
+				}
+				else if (simTotal >= 5){
+					printf("A equipe possui: %d pontos. \n Campanha Regular! \n", simTotal);
+				}
+				else{
+					printf("A equipe possui: %d pontos. \n Campanha Ruim! \n", simTotal);
+				}
 			}
-			else if (simTotal >= 10){
-			printf("A equipe possui: %d pontos. \n Boa Campanha! \n", simTotal);
-			}
-			else if (simTotal >= 5){
-				printf("A equipe possui: %d pontos. \n Campanha Regular! \n", simTotal);
-			}
-			else{
-				printf("A equipe possui: %d pontos. \n Campanha Ruim! \n", simTotal);
-			}
-		
+			break;
 		}
-		break;
-	}	
 		case 5:
 			break;
 
