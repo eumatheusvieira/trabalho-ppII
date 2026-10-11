@@ -137,9 +137,9 @@ int main(){
 			case 3:
 				//Exibindo regulamento
 				printf("\n\n<============ REGULAMENTO ============>\n");
-				printf("Cada vitória equivale a 3 pontos.\n");
-				printf("Cada empate equivale a 1 ponto.\n");
-				printf("Cada derrota equivale a 0 pontos.\n\n");
+				printf("Cada vitória equivale a %d pontos.\n", vitoria);
+				printf("Cada empate equivale a %d ponto.\n", empate);
+				printf("Cada derrota equivale a %d pontos.\n\n", derrota);
 				
 				printf("<============= SITUAÇÃO =============>\n");
 				printf("15 ou mais pontos: Excelente campanha!\n");
