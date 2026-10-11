@@ -9,7 +9,7 @@ Kauã ...
 int main(){
 	system("chcp 65001 > nul");
 	int menu, registrados = 0, qtdEquipes, qtdJogos, entradaValida, vFEmpates = 0, vFDerrotas = 0, vFVitorias = 0, totalFinal = 0, equipesExcelentes = 0, equipesBoas = 0, equipesRegulares = 0, equipesRuins = 0, maiorPont = 0, menorPont = 0, primeiraMaior = 0, primeiraMenor = 0, equipeMaior = 0, equipeMenor = 0;
-	const int vitoria = 3, empate = 1, derrota = 0;
+	int vitoria = 3, empate = 1, derrota = 0;
 
 	//Recebendo quantidades de jogos e equipes
 	do
