@@ -41,7 +41,7 @@ int main(){
 
 		switch(menu){
 
-			case 1:
+			case 1:{
 				int vitoriaEquipe, empateEquipe, derrotaEquipe, total;
 				//Zerando variáveis para substituir registro anterior
 				registrados = 0, vFEmpates = 0, vFDerrotas = 0, vFVitorias = 0, totalFinal = 0, equipesExcelentes = 0, equipesBoas = 0, equipesRegulares = 0, equipesRuins = 0, maiorPont = 0, menorPont = 0, primeiraMenor = 0, primeiraMaior = 0, equipeMaior = 0, equipeMenor = 0;
@@ -50,8 +50,15 @@ int main(){
 				for(int i = 1; i <= qtdEquipes; i++) {
 					entradaValida = 0;
 					while (!entradaValida){
-						printf("\nEquipe %d: DIGITE A QUANTIDADE DE VITÓRIAS, EMPATES E DERROTAS (v,e,d): ",i);
-						scanf("%d,%d,%d", &vitoriaEquipe,&empateEquipe,&derrotaEquipe);
+						printf("\nEquipe %d:\n", i);
+						printf("Digite a quantidade de vitórias: ");
+						scanf("%d", &vitoriaEquipe);
+				
+						printf("Digite a quantidade de empates: ");
+						scanf("%d", &empateEquipe);
+				
+						printf("Digite a quantidade de derrotas: ");
+						scanf("%d", &derrotaEquipe);
 
 						if(vitoriaEquipe < 0 || empateEquipe < 0 || derrotaEquipe < 0) {
 							printf("Valores inválidos! Digite novamente.\n");
@@ -111,6 +118,7 @@ int main(){
 				//Permitindo o acesso ao resumo
 				registrados=1;
 				break;
+			}
 			case 2: 
 				if (registrados == 1)
 				{
@@ -142,7 +150,7 @@ int main(){
 				printf("<============ REGULAMENTO ============>\n");
 				printf("Você pode registrar de 3 a 10 equipes e de 1 a 10 jogos por equipe.\n\n");
 				break;
-			case 4:
+			case 4: {
 				//Inicializando variáveis para simulação
 				int s, qtdSimulacao, simVitoria, simEmpate, simDerrota, simTotal, simTotalVitoria, simTotalEmpate, simTotalDerrota;
 			
@@ -188,19 +196,20 @@ int main(){
 
 					printf("\n\nA equipe possui: %d pontos.", simTotal);
 					if (simTotal >= 15){
-						printf("\n Excelente Campanha! \n", simTotal);
+						printf("\n Excelente Campanha! \n");
 					}
 					else if (simTotal >= 10){
-						printf("\n Boa Campanha! \n", simTotal);
+						printf("\n Boa Campanha! \n");
 					}
 					else if (simTotal >= 5){
-						printf("\n Campanha Regular! \n", simTotal);
+						printf("\n Campanha Regular! \n");
 					}
 					else{
-						printf("\n Campanha Ruim! \n", simTotal);
+						printf("\n Campanha Ruim! \n");
 					}
 				}
 				break;
+			}
 			case 5:
 				printf("\nSistema encerrado com sucesso.\nObrigado por utilizar o sistema.\n");
 				break;
