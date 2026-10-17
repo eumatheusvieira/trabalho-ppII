@@ -1,7 +1,7 @@
 /*
 Matheus Vieira Rocha
 Letícia Nunes Coutinho
-Kauã ...
+Kauã Dos Santos Oliveira
 */
 
 #include <stdio.h>
