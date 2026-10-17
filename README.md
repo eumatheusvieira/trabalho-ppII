@@ -100,7 +100,7 @@ Situação: Boa campanha
 ## Autores
 
 - Matheus Vieira Rocha
-- Letícia ...
-- Kauã ...
+- Letícia Nunes Coutinho
+- Kauã dos Santos Oliveira
 
 Professor: Sidney de Castro Lima
